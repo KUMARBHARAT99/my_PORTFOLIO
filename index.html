@@ -66,7 +66,12 @@
       display:flex;
       gap:30px;
     }
-
+    .menu-btn{
+    display:none;
+    font-size:28px;
+    cursor:pointer;
+    color:#7c3aed;
+}
     .nav-links a{
       text-decoration:none;
       color:#334155;
@@ -1132,6 +1137,26 @@
     .footer-container{
         gap:45px;
     }
+    .menu-btn{
+    display:block;
+}
+
+.nav-links{
+    position:absolute;
+    top:90px;
+    right:-100%;
+    width:260px;
+    background:white;
+    flex-direction:column;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.1);
+    transition:0.4s;
+}
+
+.nav-links.active{
+    right:20px;
+}
 
 }
 @media(max-width:768px){
@@ -1204,7 +1229,9 @@
       <a href="#projects">Projects</a>
       <a href="#contact">Contact</a>
     </div>
-
+    <div class="menu-btn">
+    <i class="fa-solid fa-bars"></i>
+</div>
   </nav>
 
   <!-- HERO SECTION -->
@@ -1560,7 +1587,7 @@
                 <i class="fa-solid fa-award"></i>
             </div>
 
-            <h3>IBM Recognition Tool</h3>
+            <h3>IBM Recognition </h3>
 
             <p>
                 Received project recognition and certification from IBM
@@ -1937,6 +1964,16 @@
     duration:1000,
     once:true
   });
+</script>
+<script>
+
+const menuBtn = document.querySelector(".menu-btn");
+const navLinks = document.querySelector(".nav-links");
+
+menuBtn.onclick = () => {
+    navLinks.classList.toggle("active");
+};
+
 </script>
 </body>
 </html>
