@@ -1134,6 +1134,30 @@
     }
 
 }
+@media(max-width:768px){
+
+    nav{
+        padding:20px 6%;
+        flex-direction:column;
+        gap:18px;
+    }
+
+    .logo{
+        font-size:32px;
+    }
+
+    .nav-links{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:16px;
+    }
+
+    .nav-links a{
+        font-size:15px;
+    }
+
+}
 @media(max-width:600px){
 
       .hero-text h1{
@@ -1153,15 +1177,12 @@
     }
 
   </style>
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
 </head>
 
 <body>
 
   <!-- NAVBAR -->
-
-
-
-
 
 
 
@@ -1196,8 +1217,7 @@
     <div class="hero-container">
 
       <!-- LEFT -->
-
-      <div class="hero-text">
+      <div class="hero-text" data-aos="fade-right">
 
         <div class="tag">
           AI • Cloud • Data Analytics
@@ -1258,7 +1278,7 @@
 
         <div class="circle"></div>
 
-        <div class="profile-card">
+        <div class="profile-card" data-aos="zoom-in">
 
           <i class="fa-solid fa-code"></i>
 
@@ -1403,7 +1423,7 @@
 
     <!-- PROJECT 1 -->
 
-    <div class="project-card">
+    <div class="project-card" data-aos="fade-up">
 
       <div class="project-image">
 
@@ -1435,7 +1455,7 @@
 
     <!-- PROJECT 2 -->
 
-    <div class="project-card">
+    <div class="project-card" data-aos="fade-up">
 
       <div class="project-image">
 
@@ -1495,7 +1515,7 @@
 
         <!-- ================= CARD 1 ================= -->
 
-        <div class="achievement-card">
+        <div class="achievement-card" data-aos="fade-up">
 
             <div class="achievement-icon">
                 <i class="fa-solid fa-trophy"></i>
@@ -1534,13 +1554,13 @@
 
         <!-- ================= CARD 2 ================= -->
 
-        <div class="achievement-card">
+        <div class="achievement-card" data-aos="fade-up">
 
             <div class="achievement-icon">
                 <i class="fa-solid fa-award"></i>
             </div>
 
-            <h3>IBM Recognition Internship</h3>
+            <h3>IBM Recognition Tool</h3>
 
             <p>
                 Received project recognition and certification from IBM
@@ -1573,7 +1593,7 @@
 
         <!-- ================= CARD 3 ================= -->
 
-        <div class="achievement-card">
+        <div class="achievement-card" data-aos="fade-up">
 
             <div class="achievement-icon">
                 <i class="fa-solid fa-brain"></i>
@@ -1612,7 +1632,7 @@
 
         <!-- ================= CARD 4 ================= -->
 
-        <div class="achievement-card">
+        <div class="achievement-card" data-aos="fade-up">
 
             <div class="achievement-icon">
                 <i class="fa-solid fa-code"></i>
@@ -1656,7 +1676,7 @@
 <!-- CONTACT SECTION -->
 <!-- ========================= -->
 
-<section class="contact" id="contact">
+<section class="contact" data-aos="fade-up">
 
     <div class="contact-container">
 
@@ -1910,5 +1930,13 @@
     </div>
 
 </footer>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+  AOS.init({
+    duration:1000,
+    once:true
+  });
+</script>
 </body>
 </html>
