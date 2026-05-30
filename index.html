@@ -3,14 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Bharat Kumar | Portfolio</title>
-
+  <title>Bharat Kumar | AI • Cloud • Data Analytics Portfolio</title>
+<meta name="description"
+ content="Bharat Kumar portfolio showcasing AI, Cloud Computing, Python, Data Analytics, projects, certifications, and technical achievements.">
   <!-- Google Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
+  <link rel="icon" type="image/png" href="assets/favicon.png">
   <!-- Icons -->
   <link
     rel="stylesheet"
@@ -19,11 +20,30 @@
 
   <style>
 
-    *{
-      margin:0;
-      padding:0;
-      box-sizing:border-box;
-      scroll-behavior:smooth;
+   ::selection{
+    background:#7b2ff7;
+    color:white;
+}
+/* SCROLLBAR */
+
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-track{
+    background:#0f172a;
+}
+
+::-webkit-scrollbar-thumb{
+    background:linear-gradient(#4facfe,#7b2ff7);
+    border-radius:20px;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  scroll-behavior:smooth;
     }
 
     body{
@@ -1703,7 +1723,7 @@
 <!-- CONTACT SECTION -->
 <!-- ========================= -->
 
-<section class="contact" data-aos="fade-up">
+<section class="contact" id="contact" data-aos="fade-up">
 
     <div class="contact-container">
 
@@ -1778,30 +1798,43 @@
 
         <div class="contact-right">
 
-            <form>
+            <form action="https://formspree.io/f/xnjrrepe"
+      method="POST"
+      class="contact-form">
 
-                <div class="input-box">
-                    <input type="text" placeholder="Your Name" required>
-                </div>
+    <div class="input-box">
+        <input type="text"
+               name="name"
+               placeholder="Your Name"
+               required>
+    </div>
 
-                <div class="input-box">
-                    <input type="email" placeholder="Your Email" required>
-                </div>
+    <div class="input-box">
+        <input type="email"
+               name="email"
+               placeholder="Your Email"
+               required>
+    </div>
 
-                <div class="input-box">
-                    <input type="text" placeholder="Subject">
-                </div>
+    <div class="input-box">
+        <input type="text"
+               name="subject"
+               placeholder="Subject">
+    </div>
 
-                <div class="input-box">
-                    <textarea rows="6" placeholder="Your Message"></textarea>
-                </div>
+    <div class="input-box">
+        <textarea name="message"
+                  rows="6"
+                  placeholder="Your Message"
+                  required></textarea>
+    </div>
 
-                <button type="submit">
-                    <i class="fa-solid fa-paper-plane"></i>
-                    Send Message
-                </button>
+    <button type="submit">
+        <i class="fa-solid fa-paper-plane"></i>
+        Send Message
+    </button>
 
-            </form>
+</form>
 
         </div>
 
